@@ -23,6 +23,8 @@ export default function App() {
     <>
     <h1>Login to TalkBox</h1>
     <button onClick={login}>Login</button>
+    <button onClick={()=>{auth.signOut()}}>Sign Out</button>
+    {user?  "Welcome, " + user.displayName : "No user" }
 
     </>
   )
